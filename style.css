@@ -124,6 +124,15 @@ img {
   }
 }
 
+/*共通のcontainer*/
+.container {
+  padding: 0 40px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*about*/
 .about {
   background-color: #171525;
@@ -132,13 +141,6 @@ img {
 }
 .about-container {
   gap: 40px;
-}
-.container {
-  padding: 0 40px;
-  max-width: 800px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .about-texts-image {
   display: flex;
@@ -197,4 +199,91 @@ img {
   .about-image-wrapper {
     display: none;
   }
+}
+/*courses*/
+.courses {
+  background-color: #171525;
+  justify-content: center;
+  padding: 80px 0px;
+}
+.courses-block-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.courses-block {
+  display: flex;
+  min-height: 150px;
+  text-decoration: none;
+  box-shadow: 4px 4px 0 var(--color-accent-red);
+  transition-duration: 0.3s;
+}
+.courses-main-title {
+  color: var(--white, #fffefc);
+  font-family: Anton;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  margin: 0;
+}
+.courses-container {
+  gap: 40px;
+  align-items: center;
+}
+.course-name {
+  color: var(--white, #fffefc);
+  font-family: Anton;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  position: relative;
+}
+.course-image {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  background: url(./img/live.png);
+  background-size: cover;
+  position: relative;
+}
+.course-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-course-overlay);
+}
+.course-body {
+  background: var(--color-accent-yellow);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 0.3s;
+}
+.course-texts {
+  color: var(--color-black);
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+.course-more {
+  color: var(--accent-red, #f20574);
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  align-self: flex-end;
 }
