@@ -287,3 +287,53 @@ img {
   margin: 0;
   align-self: flex-end;
 }
+.courses-block:hover,
+.courses-block:focus,
+.course-body:hover {
+  background: var(--course-hover-yellow, #f4e877);
+  box-shadow: 12px 12px 2px 0px #f20574;
+}
+.course-button {
+  display: flex;
+  width: 800px;
+  height: 60px;
+  padding: 10px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--accent-red, #f20574);
+  box-shadow: 4px 4px 0px 0px #f2e52e;
+  text-decoration: none;
+  margin-top: 40px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  align-self: stretch;
+  transition: 0.3s;
+}
+.course-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+}
+.course-button-texts {
+  color: var(--white, #fffefc);
+  font-family: Noto Sans JP;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+.direction-image {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.course-button:hover,
+.course-button:focus {
+  background: var(--color-button-hover-red);
+  box-shadow: 12px 12px 2px 0px #f2e52e;
+}
