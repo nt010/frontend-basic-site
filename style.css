@@ -126,7 +126,7 @@ img {
 
 /*共通のcontainer*/
 .container {
-  max-width: 880px;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -157,8 +157,8 @@ img {
   margin: 0;
 }
 .about-accent1 {
-  color: var(--accent-red, #f20574);
-  font-family: Anton;
+  color: var(--color-accent-red);
+  font-family: var(--font-family-heading);
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -166,8 +166,8 @@ img {
   letter-spacing: 0.64px;
 }
 .about-accent2 {
-  color: var(--accent-yellow, #f2e52e);
-  font-family: Anton;
+  color: var(--color-accent-yellow);
+  font-family: var(--font-family-heading);
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -176,7 +176,7 @@ img {
 }
 
 .about-sub-texts {
-  color: var(--white, #fffefc);
+  color: var(--color-white);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -232,8 +232,8 @@ img {
   transition-duration: 0.3s;
 }
 .courses-main-title {
-  color: var(--white, #fffefc);
-  font-family: Anton;
+  color: var(--color-white);
+  font-family: var(--font-family-heading);
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -247,8 +247,8 @@ img {
   justify-content: space-between;
 }
 .course-name {
-  color: var(--white, #fffefc);
-  font-family: Anton;
+  color: var(--color-white);
+  font-family: var(--font-family-heading);
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -284,7 +284,7 @@ img {
 }
 .course-texts {
   color: var(--color-black);
-  font-family: Noto Sans;
+  font-family: var(--font-family-body);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -292,8 +292,8 @@ img {
   margin: 0;
 }
 .course-more {
-  color: var(--accent-red, #f20574);
-  font-family: Noto Sans;
+  color: var(--color-accent-red);
+  font-family: var(--font-family-body);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -304,8 +304,8 @@ img {
 .courses-block:hover,
 .courses-block:focus,
 .course-body:hover {
-  background: var(--course-hover-yellow, #f4e877);
-  box-shadow: 12px 12px 2px 0px #f20574;
+  background: var(--color-course-hover-yellow);
+  box-shadow: 12px 12px 2px 0px var(--color-accent-red);
 }
 .course-button {
   display: flex;
@@ -316,14 +316,15 @@ img {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background: var(--accent-red, #f20574);
-  box-shadow: 4px 4px 0px 0px #f2e52e;
+  background: var(--color-accent-red);
+  box-shadow: 4px 4px 0px 0px var(--color-accent-yellow);
   text-decoration: none;
   cursor: pointer;
   outline: none;
   border: none;
   align-self: stretch;
   transition: 0.3s;
+  position: relative;
 }
 .course-button-texts {
   display: flex;
@@ -331,8 +332,8 @@ img {
   align-items: flex-start;
   gap: 10px;
   flex: 1 0 0;
-  color: var(--white, #fffefc);
-  font-family: Noto Sans JP;
+  color: var(--color-white);
+  font-family: var(--font-family-body);
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -351,7 +352,7 @@ img {
 .course-button:hover,
 .course-button:focus {
   background: var(--color-button-hover-red);
-  box-shadow: 12px 12px 2px 0px #f2e52e;
+  box-shadow: 12px 12px 2px 0px var(--color-accent-yellow);
 }
 @media (max-width: 750px) {
   .courses {
@@ -387,7 +388,6 @@ img {
 
   .course-texts,
   .course-more {
-    font-family: Inter;
     font-size: 12px;
   }
 
