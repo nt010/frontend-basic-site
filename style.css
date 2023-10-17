@@ -126,8 +126,7 @@ img {
 
 /*共通のcontainer*/
 .container {
-  padding: 0 40px;
-  max-width: 800px;
+  max-width: 880px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,8 +135,7 @@ img {
 
 /*about*/
 .about {
-  background-color: #171525;
-  justify-content: center;
+  background-color: var(--color-background-black);
   padding: 80px 0px;
 }
 .about-container {
@@ -149,8 +147,8 @@ img {
   gap: 20px;
 }
 .about-main-title {
-  color: var(--white, #fffefc);
-  font-family: Anton;
+  color: var(--color-white);
+  font-family: var(--font-family-heading);
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -186,6 +184,7 @@ img {
   display: flex;
   align-items: center;
   flex: 1;
+  margin: 0;
 }
 .about-image-wrapper {
   width: 320px;
@@ -217,8 +216,7 @@ img {
 }
 /*courses*/
 .courses {
-  background-color: #171525;
-  justify-content: center;
+  background-color: var(--color-background-navy);
   padding: 80px 0px;
 }
 .courses-block-container {
@@ -402,10 +400,5 @@ img {
 
   .course-button-texts {
     font-size: 14px;
-  }
-
-  .direction-image {
-    width: 30px;
-    height: 30px;
   }
 }
