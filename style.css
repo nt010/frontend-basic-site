@@ -126,7 +126,8 @@ img {
 
 /*共通のcontainer*/
 .container {
-  max-width: 800px;
+  max-width: 880px;
+  padding: 0 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -400,5 +401,10 @@ img {
 
   .course-button-texts {
     font-size: 14px;
+  }
+
+  .direction-image {
+    width: 30px;
+    height: 30px;
   }
 }
