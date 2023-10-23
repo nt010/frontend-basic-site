@@ -469,17 +469,19 @@ img {
   font-weight: 400;
   line-height: normal;
 }
-.form-input {
+input::placeholder,
+textarea::placeholder {
   color: var(--color-form-background-gray);
   font-family: var(--font-family-body);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.form-input {
   display: flex;
   padding: 10px;
   align-items: center;
-  flex: 1 0 0;
   border-radius: 8px;
   border: 1px solid var(--color-form-border-red);
   background: var(--color-form-background-yellow);
