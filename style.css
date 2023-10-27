@@ -214,6 +214,11 @@ img {
   .about-accent2 {
     font-size: 24px;
   }
+
+  /*共通のcontainerのレスポンシブ対応*/
+  .container {
+    padding: 0px 20px;
+  }
 }
 /*courses*/
 .courses {
@@ -310,7 +315,8 @@ img {
   background: var(--color-course-hover-yellow);
   box-shadow: 12px 12px 2px 0px var(--color-accent-red);
 }
-.course-button {
+/*signupのボタンと共通*/
+.red-button {
   display: flex;
   max-width: 800px;
   height: 60px;
@@ -329,7 +335,7 @@ img {
   transition: 0.3s;
   position: relative;
 }
-.course-button-texts {
+.red-button-texts {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -352,8 +358,8 @@ img {
   width: 100%;
   height: 100%;
 }
-.course-button:hover,
-.course-button:focus {
+.red-button:hover,
+.red-button:focus {
   background: var(--color-button-hover-red);
   box-shadow: 12px 12px 2px 0px var(--color-accent-yellow);
 }
@@ -394,19 +400,159 @@ img {
     font-size: 12px;
   }
 
-  .course-button {
+  .red-button {
     display: flex;
     height: 40px;
     padding: 10px 20px;
     margin: 0;
   }
 
-  .course-button-texts {
+  .red-button-texts {
     font-size: 14px;
   }
 
   .direction-image {
     width: 30px;
     height: 30px;
+  }
+}
+/*signup*/
+.signup {
+  background: var(--color-accent-yellow);
+  display: flex;
+  padding: 80px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.signup-container {
+  display: flex;
+  padding: 0px 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.signup-title {
+  color: var(--color-black);
+  font-family: var(--font-family-heading);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  margin: 0;
+}
+.signup-texts {
+  color: var(--color-black);
+  font-family: var(--font-family-body);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+.input-form {
+  width: 100%;
+  display: grid;
+  row-gap: 40px;
+}
+.input-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  row-gap: 20px;
+}
+.form-label {
+  color: var(--color-black);
+  font-family: var(--font-family-body);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-form-background-gray);
+  font-family: var(--font-family-body);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.form-input {
+  font-size: 16px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--color-form-border-red);
+  background: var(--color-form-background-yellow);
+}
+.form-textarea {
+  height: 150px;
+  align-items: flex-start;
+}
+.submit-red-button {
+  box-shadow: 4px 4px 0px 0px var(--color-black);
+}
+.submit-red-button:hover,
+.submit-red-button:focus {
+  box-shadow: 12px 12px 2px 0px var(--color-black);
+}
+@media (max-width: 750px) {
+  .signup {
+    padding: 40px 0px;
+  }
+  .signup-container {
+    padding: 0px 20px;
+    align-self: stretch;
+  }
+  .signup-title {
+    font-size: 24px;
+    letter-spacing: 0px;
+  }
+  .input-container {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+  .form-label {
+    font-size: 16px;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 12px;
+  }
+  .form-input {
+    font-size: 12px;
+    padding: 8px;
+    align-self: stretch;
+  }
+  .form-textarea {
+    height: 80px;
+  }
+}
+/*footer*/
+.footer {
+  background: var(--color-background-black);
+  display: flex;
+  padding: 60px 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.copyright {
+  color: var(--color-white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 750px) {
+  .footer {
+    padding: 40px 0px;
+    justify-content: center;
+  }
+  .copyright {
+    font-size: 12px;
   }
 }

@@ -101,8 +101,8 @@
             </div>
           </a>
         </div>
-        <a href="" class="course-button">
-          <div class="course-button-texts">すべてのコースを見る</div>
+        <a href="" class="red-button">
+          <div class="red-button-texts">すべてのコースを見る</div>
           <div class="direction-image">
             <img
               class="direction-icon"
@@ -113,5 +113,65 @@
         </a>
       </div>
     </section>
+    <section class="signup">
+      <div class="container signup-container">
+        <h2 class="signup-title">Let’s Try!</h2>
+        <p class="signup-texts">
+          Grand
+          Playersでは、ご利用登録いただけた方に対し、３レッスン分の無料枠をプレゼントいたします！<br />
+          今すぐレッスンを始めて、”Grand”なプレイヤーを目指しましょう！<br />
+          お申し込みは下記フォームからどうぞ！
+        </p>
+        <form class="input-form">
+          <div class="input-container">
+            <label class="form-label" for="username">お名前</label>
+            <input
+              type="text"
+              class="form-input"
+              id="username"
+              name="username"
+              placeholder="エドワード ヴァン 太郎"
+            />
+            <label class="form-label" for="email">メールアドレス</label>
+            <input
+              type="email"
+              class="form-input"
+              id="email"
+              name="email"
+              placeholder="grand.players@example.com"
+            />
+            <label class="form-label" for="guitar-exp">ギター歴 (年)</label>
+            <input
+              type="number"
+              class="form-input"
+              id="guitar-exp"
+              name="guitar-exp"
+              placeholder="3"
+              min="0"
+            />
+            <label class="form-label" for="amb">意気込みをどうぞ！</label>
+            <textarea
+              class="form-input form-textarea"
+              id="amb"
+              name="amb"
+              placeholder="イカすギターソロをかましてモテた～い！"
+            ></textarea>
+          </div>
+          <button class="red-button submit-red-button">
+            <div class="red-button-texts">送信する</div>
+            <div class="direction-image">
+              <img
+                class="direction-icon"
+                src="./img/arrow-right.svg"
+                alt="やじるし"
+              />
+            </div>
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="copyright">©2023 GrandPlayers</div>
+    </footer>
   </body>
 </html>
